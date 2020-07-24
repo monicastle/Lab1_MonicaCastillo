@@ -28,6 +28,12 @@ int main() {
 			int numero;
 			cout << "Ingrese un numero: ";
 			cin >> numero;
+			// Validacion del ingreso de numeros negativos
+			while (numero < 0){
+				cout << "¡El numero no puede ser negativo!" << endl;
+				cout << "Ingrese un numero: ";
+				cin >> numero;
+			} // Fin While
 			int resultado = 0;
 			// Calcula el resultado de la sumatoria
 			for (int i = 0; i <= numero; i++) {
