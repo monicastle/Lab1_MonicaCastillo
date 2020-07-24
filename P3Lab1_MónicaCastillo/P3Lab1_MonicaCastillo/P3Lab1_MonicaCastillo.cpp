@@ -5,8 +5,8 @@
 #include <cmath>
 using namespace std;
 int main() {
-	char resp = 's';
-	while (resp == 's') {
+	char respuesta = 's';
+	while (respuesta == 's') {
 		int opcion;
 		cout << "1. Ejercicio #1" << endl;
 		cout << "2. Ejercicio #2" << endl;
@@ -19,6 +19,7 @@ int main() {
 			cout << "Ingrese el valor de x: ";
 			cin >> x;
 			double denominador, resultado;
+			// Calcula el resultado de la funcion
 			denominador = 1 + exp(-x);
 			resultado = 1 / denominador;
 			cout << "f(" << x << ") = " << resultado << endl;
@@ -28,13 +29,15 @@ int main() {
 			cout << "Ingrese un numero: ";
 			cin >> numero;
 			int resultado = 0;
+			// Calcula el resultado de la sumatoria
 			for (int i = 0; i <= numero; i++) {
 				resultado += ((2 * i) - 1) * ((2 * i) + 1);
 			} // Fin For
 			cout << "S(" << numero << ") = " << resultado << endl;
 			break; }
 		case 3: {
-			resp = 'n';
+			// Salida del programa
+			respuesta = 'n';
 			break; }
 		default: {
 			cout << "¡Opcion no valida!" << endl; }
